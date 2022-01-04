@@ -1,0 +1,24 @@
+{
+  "data": {
+    "temperature": "17 °C",
+    "wind": "7 km/h",
+    "description": "Partly cloudy",
+    "forecast": [
+      {
+        "day": "1",
+        "temperature": "19 °C",
+        "wind": "14 km/h"
+      },
+      {
+        "day": "2",
+        "temperature": "20 °C",
+        "wind": "9 km/h"
+      },
+      {
+        "day": "3",
+        "temperature": "16 °C",
+        "wind": "2 km/h"
+      }
+    ]
+  }
+}
