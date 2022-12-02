@@ -1,3 +1,9 @@
+// import the knex library that will allow us to
+// construct SQL statements
+const knex = require('knex');
+
+// define the configuration settings to connect
+// to our local postgres server
 const config = {
   client: 'pg',
   connection: {
@@ -5,9 +11,14 @@ const config = {
     port: 5432,
     user: 'postgres',
     password: 'postgres',
-    database: 'se-l6',
+    database: 'postgres',
     pool: { min: 0, max: 10}
   }
-}
+};
 
-module.exports = require('knex')(config);
+// create the connection with postgres
+const db = knex(config);
+
+// expose the created connection so we can
+// use it in other files to make sql statements
+module.exports = db;
